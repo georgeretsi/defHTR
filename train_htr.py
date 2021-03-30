@@ -165,7 +165,6 @@ def test(epoch, ur=False, k=5):
 
 
     tdecs = np.concatenate(tdecs)
-    print(tdecs.shape)
 
     cer, wer = [], []
     cntc, cntw = 0, 0
