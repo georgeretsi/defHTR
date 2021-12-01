@@ -1,15 +1,18 @@
 # iam configuration 
 # HARDCODED !! CHANGE THIS !!
 
-trainset_file = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/set_split/trainset.txt'
-testset_file = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/set_split/testset.txt'
+#iam_root = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM'
+iam_root = 'datasets/IAM'
 
-line_file = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/ascii/lines.txt'
-word_file = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/ascii/words.txt'
+trainset_file = '{}/set_split/trainset.txt'.format(iam_root)
+testset_file = '{}/set_split/testset.txt'.format(iam_root)
 
-word_path = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/words'
-line_path = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/lines'
+line_file = '{}/ascii/lines.txt'.format(iam_root)
+word_file = '{}/ascii/words.txt'.format(iam_root)
 
-stopwords_path = '/media/ncsr/bee4cbda-e313-4acf-9bc8-817a69ad98ae/IAM/iam-stopwords'
+word_path = '{}/words'.format(iam_root)
+line_path = '{}/lines'.format(iam_root)
+
+stopwords_path = '{}/iam-stopwords'.format(iam_root)
 
 dataset_path = './saved_datasets'

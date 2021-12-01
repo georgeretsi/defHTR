@@ -33,7 +33,9 @@ def main_loader(set, level):
             img = 1 - img.astype(np.float32) / 255.0
             img = image_resize(img, height=img.shape[0] // 2)
         except:
-            continue
+            print('main_loader error: Could not load {}'.format(
+                img_path
+            ))
 
         data += [(img, transcr.replace("|", " "))]
 
