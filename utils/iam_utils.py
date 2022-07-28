@@ -39,7 +39,8 @@ def gather_iam_info(set='train', level='word'):
             elif level == 'line':
                 line_name = pathlist[-1]
 
-            if (info[1] != 'ok') or (line_name not in valid_set):
+            #if (info[1] != 'ok') or (line_name not in valid_set):
+            if (line_name not in valid_set):
                 continue
 
             img_path = '/'.join(pathlist)
